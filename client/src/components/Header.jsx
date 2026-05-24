@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Target, FileText, Clock, Plus, LogOut, ChevronDown, User } from 'lucide-react';
+import { FileText, Clock, Plus, LogOut, ChevronDown, User } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -110,10 +110,7 @@ export default function Header() {
 
         {/* Brand */}
         <Link to="/" className="flex items-center gap-2.5 shrink-0">
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center"
-            style={{ background: 'linear-gradient(135deg,#7c3aed,#4f46e5)', boxShadow: '0 0 16px rgba(124,58,237,0.4)' }}>
-            <Target className="w-4 h-4 text-white" />
-          </div>
+          <img src="/logo.png" alt="HireFit AI" className="w-8 h-8 rounded-lg object-cover" />
           <span className="font-bold text-lg tracking-tight">
             <span className="text-white">HireFit</span>
             <span className="gradient-text"> AI</span>

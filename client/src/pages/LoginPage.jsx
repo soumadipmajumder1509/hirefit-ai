@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Target, Loader2, AlertCircle, CheckCircle, Terminal } from 'lucide-react';
+import { Loader2, AlertCircle, CheckCircle, Terminal } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 const BENEFITS = [
@@ -137,10 +137,8 @@ export default function LoginPage() {
 
           {/* Logo */}
           <div className="flex flex-col items-center gap-3 text-center">
-            <div className="w-14 h-14 rounded-2xl flex items-center justify-center"
-              style={{ background: 'linear-gradient(135deg,#7c3aed,#4f46e5)', boxShadow: '0 0 24px rgba(124,58,237,0.4)' }}>
-              <Target className="w-7 h-7 text-white" />
-            </div>
+            <img src="/logo.png" alt="HireFit AI" className="w-14 h-14 rounded-2xl object-cover"
+              style={{ boxShadow: '0 0 24px rgba(124,58,237,0.4)' }} />
             <div>
               <h2 className="text-2xl font-bold">
                 <span className="text-white">HireFit</span>
