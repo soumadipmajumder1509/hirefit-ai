@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment files — never commit secrets
+.env
+client/.env
+server/.env
+
+# Build output
+client/dist/
+client/.vite/
+
+# Uploads (transient, not persisted)
+server/uploads/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Claude Code workspace config (local only)
+.claude/
+
+# Logs
+*.log
+npm-debug.log*
