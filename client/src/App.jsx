@@ -27,6 +27,12 @@ export default function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
+
+        {/* Footer */}
+        <footer className="border-t py-4 text-center text-xs" style={{ borderColor: 'rgba(99,102,241,0.1)', color: '#334155' }}>
+          Made with <span style={{ color: '#7c3aed' }}>♥</span> by{' '}
+          <span className="font-semibold" style={{ color: '#64748b' }}>Soumadip Majumder (IIT BHU)</span>
+        </footer>
       </div>
     </AuthProvider>
   );
